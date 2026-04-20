@@ -85,3 +85,26 @@
 
 
 ![Consulta11](img/consulta11.jpg "consulta11")
+
+
+# Clausula inner join
+
+#### Imagina que las bases de datos son como grandes archivos de información, y a veces, necesitamos cruzar datos de distintos archivos para obtener la imagen completa. El INNER JOIN es esa herramienta mágica que nos permite hacerlo, pero con una condición: solo nos muestra los resultados donde haya una coincidencia exacta.
+
+![inner join](img/inner_join.png "inner join")
+
+
+# Subconsultas
+
+#### El Reto: Se plantea una pregunta clara: "¿Qué empleados trabajan en departamentos con un presupuesto mayor a 45,000?".
+
+Misión 1 (La Subconsulta): En azul, resolvemos primero la pregunta interna: "¿Qué departamentos tienen ese presupuesto?". La imagen muestra cómo se interroga a la Tabla Departamento y se obtiene una "Lista de IDs Mágicos" (en este caso, los IDs 1 y 3, que corresponden a Ventas e IT).
+
+Misión 2 (La Consulta Principal): En verde, usamos esos "IDs Mágicos" para preguntar a la Tabla Empleado. El algoritmo busca qué empleados tienen esos IDs en su columna id_departamento.
+
+El Resultado: Se muestra la tabla final con los empleados que cumplen la condición, relacionándolos visualmente con sus departamentos originales.
+
+Esta estructura de "misiones" ayuda a entender que una subconsulta no es más que una consulta pequeña que ayuda a resolver una más grande.
+
+![subconsultas](img/subconsultas.png "subconsultas")
+
